@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulario de Contacto</h1>
+    <p id="description">
+      Por favor, completa el siguiente formulario para ponerte en contacto con
+      nosotros.
+    </p>
+    <div class="container">
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ingresa tu nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ingresa tu email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Número de Teléfono:</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Ingresa tu número"
+            min="1"
+            max="11"
+            step="1"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dropdown">Como desea ser contactado:</label>
+          <select id="dropdown" name="dropdown">
+            <option value="opcion0">(Selecciona una opción)</option>
+            <option value="opcion1">Envienme un correo</option>
+            <option value="opcion2">Llamenme por teléfono</option>
+            <option value="opcion3">Enviame un whatsapp</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Eres una empresa o individuo:</p>
+          <input
+            type="radio"
+            id="individuo"
+            name="radio"
+            value="individuo"
+            class="inline"
+          />
+          <label for="individuo">Individuo</label>
+          <input
+            type="radio"
+            id="empresa"
+            name="radio"
+            value="empresa"
+            class="inline"
+          />
+          <label for="empresa">Empresa</label>
+        </div>
+
+        <div class="form-group">
+          <p>Como nos conociste:</p>
+          <input
+            type="checkbox"
+            id="opcionA"
+            name="checkbox"
+            value="opcionA"
+            class="inline"
+          />
+          <label for="opcionA">Página web</label>
+          <br />
+          <input
+            type="checkbox"
+            id="opcionB"
+            name="checkbox"
+            value="opcionB"
+            class="inline"
+          />
+          <label for="opcionB">Publicidad</label>
+          <br />
+          <input
+            type="checkbox"
+            id="opcionC"
+            name="checkbox"
+            value="opcionC"
+            class="inline"
+          />
+          <label for="opcionC">Redes sociales</label>
+          <br />
+          <input
+            type="checkbox"
+            id="opcionD"
+            name="checkbox"
+            value="opcionD"
+            class="inline"
+          />
+          <label for="opcionD">Recomendación de amigo</label>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Déjanos tu consulta:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            placeholder="Ingresa tus comentarios aquí"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit" class="button">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
